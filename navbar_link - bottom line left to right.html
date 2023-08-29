@@ -1,0 +1,28 @@
+<nav class="navbar">
+    <ul>
+        <li>
+            <a href="#">LOG IN</a>
+        </li>
+        <li>
+            <a href="#">SIGN UP</a>
+        </li>
+    </ul>
+</nav>
+
+<style>
+    .navbar ul li a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        background-color: #f57365;
+        transition: all 0.3s;
+    }
+    
+    .navbar ul li a:hover::after {
+        width: 100%;
+        transition: all 0.3s;
+    }
+</style>
